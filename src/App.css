@@ -1,0 +1,104 @@
+body {
+  background-image: url('mu.gif');
+  background-size: 13em;
+  background-position: top;
+  background-repeat: no-repeat ;
+  background-color:black;
+  
+}
+
+.container {
+  max-width: 1200px; /* Ampliar el contenedor para acomodar más columnas */
+  margin: 0 auto;
+  padding: 20px;
+  background-image:url(dance.gif) ;
+  background-size: 10em;
+  background-position: top;
+  background-repeat: no-repeat ;
+  
+
+
+}
+
+/* Estilos para las canciones */
+.track-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Espacio uniforme entre las columnas */
+
+
+}
+
+
+.track {
+  width: calc(33.33% -20px); /* Ancho de la columna con margen */
+  margin-bottom: 20px;
+  box-shadow: 2px 6px 10px rgba(31, 231, 9, 0.7);
+}
+
+/* Estilos para la imagen y la información de la canción */
+.track img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #212121;
+  color: #cf119c;
+  box-shadow: 2px 2px 4px rgba(231, 9, 194, 0.7);
+}
+
+input[type="text"]::placeholder {
+  color: #b3b3b3;
+  
+}
+
+form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #1db954;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  
+}
+
+button:hover {
+  background-color: #2a0cd7;
+ 
+}
+
+.track-info {
+  margin-top: 10px;
+  
+}
+
+.track-info h2 {
+  margin-top: 0;
+  font-size: 18px;
+  
+}
+
+/* Estilos para el reproductor de Spotify incrustado */
+.track-info iframe {
+  width: 100%;
+  border-radius: 20px;
+}
